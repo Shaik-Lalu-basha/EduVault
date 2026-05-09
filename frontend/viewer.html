@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVault - Secure PDF Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pdf-viewer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+
+<body>
+    <!-- Watermark Layer -->
+    <div id="watermark"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar viewer-navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-vault"></i>
+                    <span>EduVault</span>
+                </a>
+            </div>
+            <h2 id="documentTitle" class="document-title">Loading...</h2>
+            <div class="viewer-controls">
+                <button id="homeBtn" class="control-btn" title="Go Home">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button id="printBtn" class="control-btn" title="Print" disabled>
+                    <i class="fas fa-print"></i>
+                </button>
+                <button id="fullscreenBtn" class="control-btn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Viewer Container -->
+    <div class="viewer-container">
+        <!-- Sidebar -->
+        <aside class="viewer-sidebar">
+            <div class="sidebar-header">
+                <h3>Document Info</h3>
+            </div>
+            <div class="document-info">
+                <p><strong>Pages:</strong> <span id="totalPages">--</span></p>
+                <p><strong>Branch:</strong> <span id="branchInfo">--</span></p>
+                <p><strong>Semester:</strong> <span id="semesterInfo">--</span></p>
+                <p><strong>Subject:</strong> <span id="subjectInfo">--</span></p>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Navigation</h3>
+            </div>
+            <div class="navigation-controls">
+                <div class="page-control">
+                    <button id="prevBtn" class="nav-btn" title="Previous Page">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                    <div class="page-indicator">
+                        <input type="number" id="pageInput" min="1" value="1">
+                        <span>/ <span id="pageTotal">1</span></span>
+                    </div>
+                    <button id="nextBtn" class="nav-btn" title="Next Page">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div class="zoom-control">
+                    <button id="zoomOutBtn" class="nav-btn" title="Zoom Out">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <span id="zoomLevel">100%</span>
+                    <button id="zoomInBtn" class="nav-btn" title="Zoom In">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Security Notice</h3>
+            </div>
+            <div class="security-notice">
+                <p>
+                    <i class="fas fa-shield-alt"></i>
+                    This document is protected with advanced security features.
+                    Downloads and screenshots are disabled to protect intellectual property.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Viewer Area -->
+        <div class="viewer-main">
+            <div id="pdfViewer" class="pdf-viewer">
+                <canvas id="pdfCanvas"></canvas>
+            </div>
+            <div id="loading" class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Loading document...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blur Overlay (shown when tab is not focused) -->
+    <div id="blurOverlay" class="blur-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/pdf-viewer.js"></script>
+    <script src="js/security.js"></script>
+</body>
+
+</html>

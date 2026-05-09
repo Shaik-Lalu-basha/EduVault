@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EduVault - Get in Touch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-vault"></i>
+                <span>EduVault</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="index.html#resources" class="nav-link">Resources</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Get in Touch</h1>
+            <p class="hero-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-content">
+        <div class="section-title">
+            <h2>Contact Information</h2>
+            <p>Reach out to us through any of these channels</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Contact Information Cards -->
+            <div class="contact-info">
+                <div class="info-card glass-card hover-glow">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>hello@eduvault.com</p>
+                    <a href="mailto:hello@eduvault.com" class="info-link">Send Email</a>
+                </div>
+
+                <div class="info-card glass-card hover-glow">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 9876543210</p>
+                    <a href="tel:+919876543210" class="info-link">Call Now</a>
+                </div>
+
+                <div class="info-card glass-card hover-glow">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>India</p>
+                    <p class="info-desc">Available for remote support</p>
+                </div>
+
+                <div class="info-card glass-card hover-glow">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Support Hours</h3>
+                    <p>24/7 Available</p>
+                    <p class="info-desc">Always here for you</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form glass-card">
+                    <h3>Send us a Message</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="support">Technical Support</option>
+                            <option value="content">Content Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..."
+                            rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Subscribe to our newsletter for updates</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary glow-btn">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="social-section">
+        <div class="section-title">
+            <h2>Follow Us</h2>
+            <p>Connect with EduVault on social media</p>
+        </div>
+
+        <div class="social-grid">
+            <a href="https://github.com" class="social-card glass-card hover-glow" target="_blank">
+                <div class="social-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>Source Code & Projects</p>
+            </a>
+
+            <a href="https://linkedin.com" class="social-card glass-card hover-glow" target="_blank">
+                <div class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Professional Profile</p>
+            </a>
+
+            <a href="https://twitter.com" class="social-card glass-card hover-glow" target="_blank">
+                <div class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <h3>Twitter</h3>
+                <p>Latest Updates</p>
+            </a>
+
+            <a href="https://instagram.com" class="social-card glass-card hover-glow" target="_blank">
+                <div class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3>Instagram</h3>
+                <p>Daily Content</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Quick answers to common questions</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>Is EduVault free to use?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! EduVault is completely free for all students. We believe education should be accessible to
+                        everyone.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>Can I download PDFs from EduVault?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, for security and copyright protection reasons, direct downloads are not allowed. However, you
+                        can view, search, and print documents through our secure viewer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>Which engineering branches are covered?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We cover 12+ major engineering branches including CSE, ECE, Mechanical, Civil, Electrical, and
+                        more for both B.Tech and M.Tech programs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>How often are new resources added?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We continuously update our platform with new PDFs, notes, and video tutorials. Check back
+                        regularly for fresh content!</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>How is my privacy protected?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We use industry-standard encryption and security protocols. Your personal information is never
+                        shared with third parties.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass-card">
+                <div class="faq-question">
+                    <h4>Can I request specific content?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Use the contact form above to request specific resources or subjects you'd like us to
+                        add.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>EduVault</h4>
+                <p>Secure Educational Platform for Graduate Students</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#resources">Browse Resources</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EduVault. Developed by <strong>SHAIK LALU BASHA</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+
+</html>
